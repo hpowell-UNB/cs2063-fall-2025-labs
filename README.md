@@ -7,7 +7,7 @@ This repository contains the labs to be used in the CS2063 Fall 2025 course at U
 * Should you use a different version you will be prompted to update the Gradle plugin used
 
 ## Android SDK
-* For the most part the code uses API level 28 (Android Pie 9.0) as a baseline
+* For the most part the code uses API level 27 (Android Oreo 8.1) as a baseline
 * Please ensure that the correct SDK platforms are installed for the devices being used for testing
 
 ## Lab marking
