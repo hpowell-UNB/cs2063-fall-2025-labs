@@ -128,7 +128,7 @@ class ActivityOne : AppCompatActivity() {
         //  HINT:
         //   Follow the provided example where createTextView
         //   refers to any of the private TextView objects
-        createTextView!!.text = getString(R.string.on_create_message, onCreateCount)
+        createTextView?.text = getString(R.string.on_create_message, onCreateCount)
     }
 
     companion object {
