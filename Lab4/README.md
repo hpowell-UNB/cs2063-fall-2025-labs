@@ -116,7 +116,7 @@ With the permissions in place let's add the content for the notification.
 
 The methods used to create the notification channels and intents require a context.  Recall that broadcast receiver does not natively inherit the contxt.  To help with this have a look at the signature for ```onRecieve```.  There is a context object you can use.
 
-1. Locate the ```onReceive``` function inside ```MainActivity```; this will be used to create the notification.
+1. Locate the ```onReceive``` function inside ```AlarmReceiver```; this will be used to create the notification.
 
 2. Create the notification channel with the following properties.
 	* Set the importance as IMPORTANCE_HIGH
