@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:id="@+id/eventNumber"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:text="@string/event_number"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:maxLines="1"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/olympicRingsIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/eventNumber"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/olympic_rings_icon"
+        app:srcCompat="@drawable/olympic_rings"/>
+
+    <TextView
+        android:id="@+id/eventHost"
+        android:layout_toEndOf="@+id/olympicRingsIcon"
+        android:layout_below="@+id/eventNumber"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/event_number"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/eventNumber"
+        android:layout_toEndOf="@+id/eventHost"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-6dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/checkBoxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/eventHost"
+        android:layout_above="@+id/checkBox"
+        android:layout_marginStart="10dp"
+        android:text="@string/visited"
+        android:textSize="16sp" />
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkBox"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_below="@+id/eventTitle"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="-6dp"-->
+<!--        android:text="" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/checkBoxText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/checkBox"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:text="@string/visited"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/olympicRingsIcon"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_below="@+id/eventTitle"-->
+<!--        android:layout_alignEnd="@+id/eventHost"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:contentDescription="@string/olympic_rings_icon"-->
+<!--        app:srcCompat="@drawable/olympic_rings"/>-->
+
+<!--    android:layout_toEndOf="@+id/olympicRingsIcon"-->
+<!--    <TextView-->
+<!--        android:id="@+id/eventHost"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_below="@+id/eventTitle"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:layout_toEndOf="@+id/checkBox"-->
+<!--        android:text="@string/event_host"-->
+<!--        android:textSize="16sp" />-->
+
+    <!--        android:text="@string/visited"-->
+    <!--        android:button="@drawable/custom_checkbox_selector"-->
+
+
+    <TextView
+        android:id="@+id/cardBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="#808080"/>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/detail_activity"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/calendar_icon"
+        app:srcCompat="@drawable/location"/>
+
+    <TextView
+        android:id="@+id/hostCityTextView"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_alignStart="@+id/locationIcon"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/host_city"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/clockIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/hostCityTextView"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/clock_icon"
+        app:srcCompat="@drawable/clock"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/datesTextView"
+        android:text="@string/dates"
+        android:layout_below="@+id/hostCityTextView"
+        android:layout_alignStart="@+id/clockIcon"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp" />
+
+    <ImageView
+        android:id="@+id/calendarIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/clockIcon"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/calendar_icon"
+        app:srcCompat="@drawable/calendar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/yearTextView"
+        android:text="@string/year"
+        android:layout_below="@+id/datesTextView"
+        android:layout_alignStart="@+id/calendarIcon"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/calendarIcon"
+        android:text="@string/view_wikipedia_entry"
+        android:id="@+id/wiki_button"/>
+</RelativeLayout>
