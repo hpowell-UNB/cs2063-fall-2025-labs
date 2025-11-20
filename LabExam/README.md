@@ -59,13 +59,13 @@ will be familiar to you from previous labs.
 
 ## Lab Tasks
 
-1. Complete the TODOs in `MainActivity.kt`, `DetailActivity.kt`, `LoadDataTask.kt`, `SharedPreferencesManager.kt`, and `MyAdapter.kt`.
+1. Complete the list of TODOs found in `MainActivity.kt`, `DetailActivity.kt`, `LoadDataTask.kt`, and `MyAdapter.kt`.
 
-2. Complete TODOs related to the `SharedPreferences` which are labeled as `TODO: SharedPreferences`.  
-* You will need to make use of the singleton object class `SharedPreferencesManager`.
-  * The keys will be a string value for the Olympic event number associated with a host nation and the values will be a boolean.
-    * True representing that a user has visited a nation and false representing that a user has not
-    * If an id is not found in the `SharedPreferences` its value will be assumed to be false
+2. Complete TODOs related to the `SharedPreferences` which are labeled as `TODO: SharedPreferences`.
+  * These taks can be found in `SharedPreferencesManager.kt` and `MyAdapter.kt`.
+    * The keys will be a string value for the Olympic event number associated with a host nation and the values will be a boolean.
+      * True representing that a user has visited a nation and false representing that a user has not
+      * If an id is not found in the `SharedPreferences` its value will be assumed to be false
 
 **You may only modify `MainActivity.kt`, `DetailActivity.kt`, `LoadDataTask.kt`, `SharedPreferencesManager.kt`, and `MyAdapter.kt`. You must not make changes to any other files.**
 
